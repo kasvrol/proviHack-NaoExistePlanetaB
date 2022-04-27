@@ -12,6 +12,7 @@
 - [Node](https://nodejs.org/en/download/)
 - [Javascript](https://www.javascript.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [Git](https://git-scm.com/)
 
 ### Para baixar o código em sua máquina:
 
@@ -40,10 +41,9 @@ npm i
 npm start
 ```
 
-### Autoras desenvolvedoras:
+### Autoras:
 
-- [Ana Karolina](github.com/kasvrol) email:santosak1999@gmail.com
-
-### Autora do design:
-
-- Beatriz
+| Nome         | Cargo | Github        | Email                      |
+| ------------ | ----- | ------------- | -------------------------- |
+| Ana Karolina | DEV   | kasvrol       | santosak1999@gemail.com    |
+| Tainara C    | DEV   | TaiCostaAlves | tainaracosta92@hotmail.com |
