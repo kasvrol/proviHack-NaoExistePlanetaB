@@ -13,9 +13,36 @@
 - [Javascript](https://www.javascript.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
+### Para baixar o código em sua máquina:
+
+- Clone o projeto através do comando git:
+
+```bash
+git clone https://github.com/kasvrol/proviHack-NaoExistePlanetaB
+```
+
+- Abra o terminal do computador;
+- Entre na pasta do projeto:
+
+```bash
+cd ./proviHack-NaoExistePlanetaB
+```
+
+- Instale as frameworks com o comando:
+
+```bash
+npm i
+```
+
+- Visualize o projeto com o comando:
+
+```bash
+npm start
+```
+
 ### Autoras desenvolvedoras:
 
-- [Ana Karolina](github.com/kasvrol) santosak1999@gmail.com
+- [Ana Karolina](github.com/kasvrol) email:santosak1999@gmail.com
 
 ### Autora do design:
 
