@@ -1,4 +1,4 @@
-@import './index.sass';
+@import './variables.sass';
 
 @mixin image-size {
     width: $image-width;
@@ -27,11 +27,19 @@
 }
 
 @mixin title ($color) {
-    font-size: 1rem;
+    font-size: 2rem;
     color:$color;
 }
 
 @mixin text ($color, $size) {
     font-size: $size;
     color:$color;
+    text-align: justify
+}
+
+@mixin directionOne ($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: space-evenly;
+    align-items: center;
 }

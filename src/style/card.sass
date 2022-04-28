@@ -1,0 +1,25 @@
+@import './index'
+
+.intructions
+    @include directionOne (column)
+
+.intructions > p
+    @include title ($pink)
+    font-weight: bold
+
+.intructions-cards
+    @include directionOne (row)
+
+.card
+    @include directionOne (column)
+
+.image-card
+    @include image-size
+
+.card-paragraph
+    @include text ($black, 1rem)
+    font-weight: 600
+
+.card-number
+    @include text ($pink, 1rem)
+    font-weight: 600
