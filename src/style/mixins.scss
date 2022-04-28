@@ -1,0 +1,37 @@
+@import './index.sass';
+
+@mixin image-size {
+    width: $image-width;
+    height: $image-length;
+}
+
+@mixin photo-size {
+    width: $photo-width;
+    height: $photo-length;
+}
+
+@mixin login-button ($color){
+    padding: .2rem .3rem;
+    border-radius: .02rem;
+    background-color: $color;
+}
+
+@mixin seamstresses-name {
+    font-size: 1rem;
+}
+
+@mixin about-more {
+    font-size: 1rem;
+    background-color: $pink;
+    color:$black;
+}
+
+@mixin title ($color) {
+    font-size: 1rem;
+    color:$color;
+}
+
+@mixin text ($color, $size) {
+    font-size: $size;
+    color:$color;
+}
