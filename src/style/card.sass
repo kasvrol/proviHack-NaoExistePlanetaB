@@ -1,10 +1,14 @@
 @import './index'
 
-.intructions
+.intructions, .tissuesContainer
     @include directionOne (column)
 
 .intructions > p
     @include title ($pink)
+    font-weight: bold
+
+.tissuesContainer > p
+    @include title ($black)
     font-weight: bold
 
 .intructions-cards

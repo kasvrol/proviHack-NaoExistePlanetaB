@@ -6,9 +6,9 @@ import '../../style/card.sass'
 
 function TissuesCard () {
     return (
-        <section className='intructions'>
+        <section className='tissuesContainer'>
             <p>
-            Como nosso projeto funciona?
+                Tecidos disponíveis
             </p>
             <section className='intructions-cards'>
                 <section className='card'>
