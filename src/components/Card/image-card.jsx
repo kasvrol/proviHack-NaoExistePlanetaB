@@ -1,6 +1,9 @@
 import React from "react";
+import "../../style/card.sass";
 
 function ImageCard({
+    title,
+    classTitle,
     imageOne,
     textImageOne,
     imageTwo,
@@ -9,22 +12,37 @@ function ImageCard({
     textImageThree,
     textOne,
     textTwo,
-    texThree,
+    textThree,
     cardParagraph,
 }) {
     return (
         <div className="cardContainer">
-            <section className="card">
-                <img src={imageOne} alt={textImageOne} />
-                <p className={cardParagraph}>{textOne}</p>
-            </section>
-            <section className="card">
-                <img src={imageTwo} alt={textImageTwo} />
-                <p className={cardParagraph}>{textTwo}</p>
-            </section>
-            <section className="card">
-                <img src={imageThree} alt={textImageThree} />
-                <p className={cardParagraph}>{texThree}</p>
+            <p className={classTitle}>{title}</p>
+            <section className="cards">
+                <section className="card">
+                    <img
+                        src={imageOne}
+                        alt={textImageOne}
+                        className="image-card"
+                    />
+                    <p className={cardParagraph}>{textOne}</p>
+                </section>
+                <section className="card">
+                    <img
+                        src={imageTwo}
+                        alt={textImageTwo}
+                        className="image-card"
+                    />
+                    <p className={cardParagraph}>{textTwo}</p>
+                </section>
+                <section className="card">
+                    <img
+                        src={imageThree}
+                        alt={textImageThree}
+                        className="image-card"
+                    />
+                    <p className={cardParagraph}>{textThree}</p>
+                </section>
             </section>
         </div>
     );

@@ -1,4 +1,5 @@
 import React from "react";
+import "../style/card.sass";
 import "../style/custom.sass";
 import Logo from "../components/Logo";
 import ImageCard from "../components/Card/image-card";
@@ -12,6 +13,8 @@ function outraC() {
         <main className="whoWeAreContainer">
             <Logo />
             <ImageCard
+                title={"Até 30 cm"}
+                classTitle={"titleBlack"}
                 imageOne={instruction01}
                 imageTwo={instruction02}
                 imageThree={instruction03}
@@ -21,8 +24,11 @@ function outraC() {
                 textOne={"Jeans"}
                 textTwo={"Tecido de algodão"}
                 textThree={"Tecido de poliester"}
+                cardParagraph={"card-paragraph tissue-lenght"}
             />
             <ImageCard
+                title={"Até 50 cm"}
+                classTitle={"titleBlack"}
                 imageOne={instruction01}
                 imageTwo={instruction02}
                 imageThree={instruction03}
@@ -32,6 +38,7 @@ function outraC() {
                 textOne={"Jeans"}
                 textTwo={"Tecido de algodão"}
                 textThree={"Tecido de poliester"}
+                cardParagraph={"card-paragraph tissue-lenght"}
             />
         </main>
     );

@@ -1,6 +1,6 @@
 @import './index'
 
-.intructions, .tissuesContainer
+.intructions, .tissuesContainer, .cardContainer
     @include directionOne (column)
 
 .intructions > p
@@ -11,7 +11,11 @@
     @include title ($black)
     font-weight: bold
 
-.intructions-cards
+.titleBlack
+    @include title ($black)
+    font-weight: bold
+
+.intructions-cards, .cards
     display: flex
     flex-direction: row
     justify-content: space-evenly
