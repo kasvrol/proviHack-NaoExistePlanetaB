@@ -14,27 +14,27 @@ function Card () {
                 <section className='card'>
                     <img src={instruction01} alt='{image01} ' className='image-card'/>
                     <p className='card-paragraph'>
-                        <small className='card-number'>
+                        <span className='card-number'>
                             1 - 
-                        </small>
+                        </span>
                         Empresas doam residúdos de tecidos (recortes).
                     </p>
                 </section>
                 <section className='card'>
-                    <img src={instruction02} alt='{image01} ' className='image-card'/>
+                    <img src={instruction02} alt='{image02} ' className='image-card'/>
                     <p className='card-paragraph'>
-                        <small className='card-number'>
+                        <span className='card-number'>
                             2 - 
-                        </small>
+                        </span>
                         Costureiras se cadastram para receber doações.
                     </p>
                 </section>
                 <section className='card'>
-                    <img src={instruction03} alt='{image01} ' className='image-card'/>
+                    <img src={instruction03} alt='{image03} ' className='image-card'/>
                     <p className='card-paragraph'>
-                        <small className='card-number'>
+                        <span className='card-number'>
                             3 - 
-                        </small>
+                        </span>
                         Costureiras retiram no polo mais próximo de suas casas.
                     </p>
                 </section>
