@@ -1,11 +1,19 @@
-import React from 'react';
+import React from "react";
+import "../style/card.sass";
+import Logo from "../components/Logo";
+import Button from "../components/Button";
 
-function OurSeamstresses () {
+function Blog() {
     return (
-        <h1>
-            Our Seamstresses
-        </h1>
+        <main>
+            <Logo />
+            <h1>Conheça nossas costureiras</h1>
+            <Button
+                title={"Seja uma costureira parceira, cadastre-se"}
+                color={"pink-button tissues-button"}
+            />
+        </main>
     );
 }
 
-export default OurSeamstresses;
+export default Blog;
