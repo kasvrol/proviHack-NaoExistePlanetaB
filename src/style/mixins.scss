@@ -36,6 +36,11 @@
     color: $color;
 }
 
+@mixin titleTwo($color) {
+    font-size: 3rem;
+    color: $color;
+}
+
 @mixin text($color, $size) {
     font-size: $size;
     color: $color;
@@ -57,6 +62,18 @@
     border: none;
     border-radius: 0.5rem;
     font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+@mixin tissues-button {
+    background-color: $pink;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: $white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 3rem;
 }
