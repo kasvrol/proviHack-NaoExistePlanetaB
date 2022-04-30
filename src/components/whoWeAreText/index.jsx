@@ -36,3 +36,18 @@ export function Informations() {
         </div>
     );
 }
+
+export function WhatWeDo() {
+    return (
+        <div className="whoWeAreTextContainer">
+            <p>O que fazemos</p>
+            <section className="whoAreText">
+                <p>
+                    Transformamos os insumos descartados pela indústria têxtil
+                    em matéria prima para muheres em situação de funerabilidade
+                    social.
+                </p>
+            </section>
+        </div>
+    );
+}
