@@ -7,3 +7,7 @@
 .informationsContainer > img {
     width: 40vw;
 }
+
+.pink-button {
+    @include pink-button;
+}
