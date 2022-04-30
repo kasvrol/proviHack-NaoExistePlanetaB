@@ -3,6 +3,7 @@ import "../style/blog.scss";
 import Logo from "../components/Logo";
 import Button from "../components/Button";
 import SeamstressesCard from "../components/seamstressesCard";
+import Instructions from "../components/instructions";
 
 import seamstresses01 from "../images/seamstresses1.svg";
 import seamstresses02 from "../images/seamstresses2.svg";
@@ -54,6 +55,7 @@ function Blog() {
                 title={"Seja uma costureira parceira, cadastre-se"}
                 color={"pink-button tissues-button"}
             />
+            <Instructions />
         </main>
     );
 }
