@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import WhoWeAre from "./pages/whoWeAre";
 import Tissues from "./pages/tissues";
-import OurSeamstresses from "./pages/OurSeamstresses";
+import Blog from "./pages/blog";
 
 function App() {
     return (
@@ -11,7 +11,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/whoWeAre" element={<WhoWeAre />} />
             <Route path="/tissues" element={<Tissues />} />
-            <Route path="/ourSeamstresses" element={<OurSeamstresses />} />
+            <Route path="/blog" element={<Blog />} />
         </Routes>
     );
 }
