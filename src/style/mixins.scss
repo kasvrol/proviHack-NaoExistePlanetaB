@@ -13,6 +13,7 @@
 @mixin photo-size {
     width: $photo-width;
     height: $photo-lenght;
+    padding: 0 2rem;
 }
 
 @mixin login-button($color) {
@@ -32,12 +33,12 @@
 }
 
 @mixin title($color) {
-    font-size: 2rem;
+    font-size: 4vw;
     color: $color;
 }
 
 @mixin titleTwo($color) {
-    font-size: 3rem;
+    font-size: 5vw;
     color: $color;
 }
 
@@ -56,24 +57,24 @@
 
 @mixin pink-button {
     background-color: $pink;
-    padding: 0.5rem 1.4rem;
+    padding: 2vw 3vw;
     text-align: center;
     color: $white;
     border: none;
     border-radius: 0.5rem;
-    font-size: 1rem;
+    font-size: 2.5vw;
     font-weight: 600;
     margin-bottom: 3rem;
 }
 
 @mixin tissues-button {
     background-color: $pink;
-    padding: 1rem 2rem;
+    padding: 3vw 4vw;
     text-align: center;
     color: $white;
     border: none;
     border-radius: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 4vw;
     font-weight: 600;
     margin-bottom: 3rem;
 }
