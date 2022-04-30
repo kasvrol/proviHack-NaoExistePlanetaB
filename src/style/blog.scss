@@ -1,0 +1,23 @@
+@import "./index";
+
+.blogContainer {
+    @include directionOne(column);
+    text-align: center;
+}
+
+.seamstressesPictures {
+    flex-grow: 1;
+    @include seamstresses-size;
+}
+
+@media screen and (max-width: 1100px) {
+    .seamstressesPictures {
+        @include seamstresses-mobile-size;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .seamstressesPictures {
+        @include seamstresses-mobile-size2;
+    }
+}

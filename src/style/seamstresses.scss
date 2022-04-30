@@ -1,0 +1,22 @@
+@import "./index";
+
+.seamstressesContainer {
+    @include directionOne(row);
+}
+
+.seamstressesCard {
+    @include directionOne(column);
+    flex-grow: 1;
+    margin: 2vw 0.05rem;
+}
+
+.seamstressesTexts {
+    @include directionOne(row);
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+    .seamstressesContainer {
+        @include directionOne(column);
+    }
+}

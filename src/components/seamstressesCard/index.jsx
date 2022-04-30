@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/card.sass";
+import "../../style/seamstresses.scss";
 
 function seamstressesCard({
     seamstressesImageOne,
@@ -18,42 +18,50 @@ function seamstressesCard({
     AboutMore,
 }) {
     return (
-        <div>
-            <section>
+        <div className="seamstressesContainer">
+            <section className="seamstressesCard">
                 <img
                     src={seamstressesImageOne}
                     alt={seamstressesAltOne}
                     className={className}
                 />
-                <p>{seamstressesNameOne}</p>
-                <p>{AboutMore}</p>
+                <section className="seamstressesTexts">
+                    <p>{seamstressesNameOne}</p>
+                    <p>{AboutMore}</p>
+                </section>
             </section>
-            <section>
+            <section className="seamstressesCard">
                 <img
                     src={seamstressesImageTwo}
                     alt={seamstressesAltTwo}
                     className={className}
                 />
-                <p>{seamstressesNameTwo}</p>
-                <p>{AboutMore}</p>
+                <section className="seamstressesTexts">
+                    <p>{seamstressesNameTwo}</p>
+                    <p>{AboutMore}</p>
+                </section>
             </section>
-            <section>
+            <section className="seamstressesCard">
                 <img
                     src={seamstressesImageThree}
                     alt={seamstressesAltThree}
                     className={className}
                 />
-                <p>{seamstressesNameThree}</p>
-                <p>{AboutMore}</p>
+                <section className="seamstressesTexts">
+                    <p>{seamstressesNameThree}</p>
+                    <p>{AboutMore}</p>
+                </section>
             </section>
-            <section>
+            <section className="seamstressesCard">
                 <img
                     src={seamstressesImageFour}
                     alt={seamstressesAltFour}
                     className={className}
                 />
-                <p>{seamstressesNameFour}</p>
-                <p>{AboutMore}</p>
+                <section className="seamstressesTexts">
+                    <p>{seamstressesNameFour}</p>
+                    <p>{AboutMore}</p>
+                </section>
             </section>
         </div>
     );

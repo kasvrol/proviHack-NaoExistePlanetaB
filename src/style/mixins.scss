@@ -16,6 +16,22 @@
     padding: 0 2rem;
 }
 
+@mixin seamstresses-size {
+    width: $seamstresses-width;
+    height: auto;
+    padding: 0 2rem;
+}
+
+@mixin seamstresses-mobile-size {
+    width: $seamstresses-mobile-width;
+    height: auto;
+}
+
+@mixin seamstresses-mobile-size2 {
+    width: $seamstresses-mobile-width2;
+    height: auto;
+}
+
 @mixin login-button($color) {
     padding: 0.2rem 0.3rem;
     border-radius: 0.02rem;
