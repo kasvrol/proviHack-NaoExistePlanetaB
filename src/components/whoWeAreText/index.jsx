@@ -2,7 +2,7 @@ import React from "react";
 import image04 from "../../images/image04.svg";
 import "../../style/text.sass";
 
-function WhoWeAre() {
+export function WhoWeAre() {
     return (
         <div className="whoWeAreTextContainer">
             <p>Quem somos</p>
@@ -12,6 +12,15 @@ function WhoWeAre() {
                     diminuir o impacto ambiental causado pelo descarte de
                     tecidos pela indústria têxtil de forma precária.
                 </p>
+            </section>
+        </div>
+    );
+}
+
+export function Informations() {
+    return (
+        <div className="whoWeAreTextContainer">
+            <section className="whoAreText">
                 <p>
                     Juntos, os bairros do Brás, Bom Retiro e Vila Mariana
                     produzem cerca de 63 toneladas por dia de lixo de tecidos.
@@ -27,5 +36,3 @@ function WhoWeAre() {
         </div>
     );
 }
-
-export default WhoWeAre;
