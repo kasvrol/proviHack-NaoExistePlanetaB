@@ -1,10 +1,27 @@
-import React from 'react';
+import React from "react";
+import Instructions from "../components/instructions";
+import TissuesCard from "../components/tissuesCard";
+import WhoWeAre from "../components/whoWeAreText";
+import AboutMore from "../components/aboutMore";
+import Button from "../components/Button";
+import Logo from "../components/Logo";
+import "../style/custom.sass";
 
-function whoWeAre () {
+function whoWeAre() {
     return (
-        <h1>
-            who We Are
-        </h1>
+        <>
+            <main className="whoWeAreContainer">
+                <Logo />
+                <WhoWeAre />
+                <Instructions />
+                <TissuesCard />
+                <AboutMore />
+                <Button
+                    title={"Quero ser um parceiro doador de tecidos!"}
+                    color={"pink-button"}
+                />
+            </main>
+        </>
     );
 }
 

@@ -1,14 +1,8 @@
-import React from 'react';
-import Instructions from '../components/instructions'
-import TissuesCard from '../components/tissuesCard'
+import React from "react";
+import "../style/custom.sass";
 
-function whatWeDo () {
-    return (
-        <>
-            <Instructions/>
-            <TissuesCard/>
-        </>
-    );
+function outraC() {
+    return <>mudou o layout</>;
 }
 
-export default whatWeDo;
+export default outraC;

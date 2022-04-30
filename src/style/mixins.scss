@@ -1,18 +1,23 @@
-@import './variables.sass';
+@import "./variables.sass";
 
 @mixin image-size {
     width: $image-width;
     height: $image-length;
 }
 
-@mixin photo-size {
-    width: $photo-width;
-    height: $photo-length;
+@mixin logo-size {
+    width: $logo-width;
+    height: auto;
 }
 
-@mixin login-button ($color){
-    padding: .2rem .3rem;
-    border-radius: .02rem;
+@mixin photo-size {
+    width: $photo-width;
+    height: $photo-lenght;
+}
+
+@mixin login-button($color) {
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.02rem;
     background-color: $color;
 }
 
@@ -23,23 +28,35 @@
 @mixin about-more {
     font-size: 1rem;
     background-color: $pink;
-    color:$black;
+    color: $black;
 }
 
-@mixin title ($color) {
+@mixin title($color) {
     font-size: 2rem;
-    color:$color;
+    color: $color;
 }
 
-@mixin text ($color, $size) {
+@mixin text($color, $size) {
     font-size: $size;
-    color:$color;
-    text-align: justify
+    color: $color;
+    text-align: justify;
 }
 
-@mixin directionOne ($direction) {
+@mixin directionOne($direction) {
     display: flex;
     flex-direction: $direction;
     justify-content: space-evenly;
     align-items: center;
+}
+
+@mixin pink-button {
+    background-color: $pink;
+    padding: 0.5rem 1.4rem;
+    text-align: center;
+    color: $white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
 }

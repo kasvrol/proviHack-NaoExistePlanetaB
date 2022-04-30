@@ -1,0 +1,18 @@
+@import './index'
+
+.whoWeAreTextContainer, .AboutMoreContainer
+    @include directionOne (column)
+
+.whoAreContainer > p, .AboutMoreContainer > p
+    @include title ($pink)
+
+.whoAreText, .AboutMoreText
+    @include text ($black, 1rem)
+    margin: 1rem 1rem
+    padding: 1rem 1rem
+
+.whoAreText span
+    @include text ($pink, 1rem)
+
+.whoAreImage img
+    @include photo-size
