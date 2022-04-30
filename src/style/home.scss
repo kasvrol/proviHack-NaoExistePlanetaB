@@ -1,0 +1,9 @@
+@import "./index";
+
+.informationsContainer {
+    @include directionOne(row);
+}
+
+.informationsContainer > img {
+    width: 40vw;
+}
