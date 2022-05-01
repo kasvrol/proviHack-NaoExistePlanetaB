@@ -1,0 +1,97 @@
+@import "./index.sass";
+
+.LoginContainer,
+.LoginForm {
+    @include directionOne(column);
+}
+
+.LoginForm p {
+    font-size: 3vw;
+}
+
+.LoginForm input {
+    margin-bottom: 2vw;
+    font-size: 2vw;
+    font-family: "Roboto Slab", serif;
+    background-color: $input-color;
+    border: 1px solid;
+    border-radius: 0.5vw;
+}
+
+.LoginContainerDiv {
+    @include directionOne(row);
+    margin-top: 10vw;
+}
+
+.LoginImage {
+    width: 50%;
+}
+
+.registrationLogin {
+    @include directionOne(column);
+}
+
+.LoginButton,
+.registrationLoginButton {
+    width: 13vw;
+    height: 4vw;
+    font-size: 1.8vw;
+    border: none;
+    font-family: "Roboto Slab", serif;
+    background-color: $pink;
+    border-radius: 0.8vw;
+    color: $white;
+}
+
+.registrationLoginButton {
+    width: 15vw;
+}
+
+@media screen and (min-width: 1100px) {
+    .registrationLoginButton {
+        width: 8vw;
+        font-size: 1vw;
+        height: 2vw;
+        border-radius: 0.2vw;
+    }
+    .LoginButton {
+        font-size: 1vw;
+        width: 5vw;
+        height: 2vw;
+        border-radius: 0.2vw;
+    }
+    .LoginForm input {
+        width: 15vw;
+        height: 2vw;
+        font-size: 1vw;
+    }
+    .LoginForm p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .LoginContainerDiv {
+        @include directionOne(column);
+    }
+    .LoginForm p {
+        font-size: 4vw;
+    }
+    .LoginForm input {
+        width: 40vw;
+        height: 4vw;
+        font-size: 3vw;
+    }
+    .registrationLoginButton {
+        width: 25vw;
+        font-size: 3vw;
+        height: 6vw;
+        border-radius: 1vw;
+    }
+    .LoginButton {
+        font-size: 3vw;
+        width: 15vw;
+        height: 6vw;
+        border-radius: 1vw;
+    }
+}
