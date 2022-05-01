@@ -30,6 +30,7 @@ function Home() {
             <Button
                 title={"Cadastre-se para receber doações"}
                 color={"pink-button"}
+                navigateTo={"/signUp"}
             />
             <WhyThisCaseIsImpotant classNameTitle="WhoWeAreTitle" />
             <Benefits classNameTitle="WhoWeAreTitle" />
