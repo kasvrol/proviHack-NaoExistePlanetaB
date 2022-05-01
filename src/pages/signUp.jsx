@@ -11,7 +11,7 @@ import "../style/signUp.scss";
 const defaultForm = {
     name: '',
     email: '',
-    cpf_or_cpnj: '',
+    cpf_or_cnpj: '',
     password: '',
     confirmPassword: '',
     groupcategory: '',
@@ -25,9 +25,13 @@ function Home() {
     const navigate = useNavigate();
     const [form, setForm] = useState({ ...defaultForm });
     const [error, setError] = useState('');
+    const [sucess, setSucess] = useState('');
 
     async function handleSubmit(e) {
         e.preventDefault();
+
+        setError('');
+        console.log(form)
 
         try {
             if (form.password !== form.confirmPassword) {
@@ -35,11 +39,19 @@ function Home() {
                 return;
             }       
 
+            if (document.querySelector('#costureira').checked) {
+                form.groupcategory = 'costureira';
+            }
+
+            if (document.querySelector('#empresaDoadora').checked) {
+                form.groupcategory = 'empresaDoadora';
+            }
+
             const response = await api.post('/register',
                 {
                     name: form.name,
                     email: form.email,
-                    cpf_or_cpnj: form.cpf_or_cpnj,
+                    cpf_or_cnpj: form.cpf_or_cnpj,
                     password: form.password,
                     groupcategory: form.groupcategory,
                     zip_code: form.zip_code,
@@ -54,7 +66,7 @@ function Home() {
             }
 
             setError('');
-            navigate('/');
+            setSucess('Usuário cadastrado com sucesso!');
         } catch (error) {
             setError(error.response.data.message);
         }
@@ -114,7 +126,7 @@ function Home() {
                     onChange={handleChangeForm}
                 />
                 <input
-                    name="cpf_or_cpnj"
+                    name="cpf_or_cnpj"
                     type="text"
                     placeholder="CPF ou CNPJ"
                     className="informationsSection"
@@ -166,6 +178,7 @@ function Home() {
                 />
 
                 {error && <p style={{color: 'red'}}>{error}</p>}
+                {sucess && <p style={{color: 'green'}}>{sucess}</p>}
 
                 <button className="submitButton" type="submit">Concluir!</button>
             </form>
