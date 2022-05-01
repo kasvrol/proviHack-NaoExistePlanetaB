@@ -5,7 +5,7 @@ import { WhoWeAre, Informations } from "../components/whoWeAreText";
 import { AboutMore } from "../components/aboutMore";
 import Button from "../components/Button";
 import Logo from "../components/Logo";
-import "../style/custom.sass";
+import "../style/custom.scss";
 
 function whoWeAre() {
     return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/custom.sass";
+import "../../style/custom.scss";
 
 function Button({ color, title }) {
     return (
