@@ -1,0 +1,31 @@
+@import "./index";
+
+.homeContainer {
+    @include directionOne(column);
+    padding: 0 2vw;
+}
+
+.informationsContainer {
+    @include directionOne(row);
+}
+
+.informationsContainer > img {
+    width: 40vw;
+}
+
+.WhoWeAreTitle,
+.WhatWeDoTitle {
+    @include title(3vw, $pink);
+}
+
+.BenefitsTitle {
+    @include title(1px, $pink);
+}
+
+.WhyThisCaseIsImpotantTitle {
+    @include title(1px, $pink);
+}
+
+.pink-button {
+    @include pink-button;
+}

@@ -1,8 +1,8 @@
 import React from "react";
 import Instructions from "../components/instructions";
 import TissuesCard from "../components/tissuesCard";
-import WhoWeAre from "../components/whoWeAreText";
-import AboutMore from "../components/aboutMore";
+import { WhoWeAre, Informations } from "../components/whoWeAreText";
+import { AboutMore } from "../components/aboutMore";
 import Button from "../components/Button";
 import Logo from "../components/Logo";
 import "../style/custom.sass";
@@ -13,6 +13,7 @@ function whoWeAre() {
             <main className="whoWeAreContainer">
                 <Logo />
                 <WhoWeAre />
+                <Informations />
                 <Instructions />
                 <TissuesCard />
                 <AboutMore />

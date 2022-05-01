@@ -48,8 +48,8 @@
     color: $black;
 }
 
-@mixin title($color) {
-    font-size: 4vw;
+@mixin title($size, $color) {
+    font-size: $size;
     color: $color;
 }
 
