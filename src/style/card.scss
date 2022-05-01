@@ -32,6 +32,7 @@
     align-items: center;
     margin: 0 0.5rem;
     padding: 0.5rem 0.5rem;
+    width: 25vw;
 }
 
 .image-card {
@@ -40,7 +41,7 @@
 }
 
 .card-paragraph {
-    @include text($black, 1rem);
+    @include text($black, 1.2vw);
     font-weight: 600;
 }
 
@@ -65,6 +66,10 @@
         flex-direction: column;
         width: 90%;
     }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
     .card {
         flex-direction: row;
         justify-content: space-evenly;
@@ -72,5 +77,8 @@
     }
     .tissue-lenght {
         text-align: center;
+    }
+    .card-paragraph {
+        @include text($black, 3vw);
     }
 }

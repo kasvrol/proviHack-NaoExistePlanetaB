@@ -16,7 +16,8 @@
 .WhoWeAreTitle,
 .WhatWeDoTitle,
 .BenefitsTitle,
-.WhyThisCaseIsImpotantTitle {
+.WhyThisCaseIsImpotantTitle,
+.titlePink {
     @include title(3vw, $pink);
 }
 
@@ -26,7 +27,8 @@
 
 @media screen and (max-width: 900px) {
     .WhoWeAreTitle,
-    .WhatWeDoTitle {
+    .WhatWeDoTitle,
+    .titlePink {
         @include title(5vw, $pink);
     }
     .informationsContainer {
