@@ -11,7 +11,7 @@ import "../style/signUp.scss";
 const defaultForm = {
     name: '',
     email: '',
-    cpfOrCnpj: '',
+    cpf_or_cpnj: '',
     password: '',
     confirmPassword: '',
     groupcategory: '',
@@ -39,7 +39,7 @@ function Home() {
                 {
                     name: form.name,
                     email: form.email,
-                    cpfOrCnpj: form.cpfOrCnpj,
+                    cpf_or_cpnj: form.cpf_or_cpnj,
                     password: form.password,
                     groupcategory: form.groupcategory,
                     zip_code: form.zip_code,
@@ -114,7 +114,7 @@ function Home() {
                     onChange={handleChangeForm}
                 />
                 <input
-                    name="cpfOrCnpj"
+                    name="cpf_or_cpnj"
                     type="text"
                     placeholder="CPF ou CNPJ"
                     className="informationsSection"
