@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../components/Logo";
 import { NavLink } from "react-router-dom";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 import image07 from "../images/image07.svg";
 
@@ -10,6 +11,7 @@ import "../style/signUp.scss";
 function Home() {
     return (
         <>
+            <Header />
             <main className="signUpContainer">
                 <Logo />
                 <img
