@@ -27,7 +27,7 @@
 @media screen and (max-width: 900px) {
     .WhoWeAreTitle,
     .WhatWeDoTitle {
-        @include title(6vw, $pink);
+        @include title(5vw, $pink);
     }
     .informationsContainer {
         @include directionOne(column);
