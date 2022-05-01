@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/card.sass";
+import "../../style/card.scss";
 
 function ImageCard({
     title,

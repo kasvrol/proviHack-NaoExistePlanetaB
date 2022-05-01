@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/card.sass";
+import "../style/card.scss";
 import "../style/tissuesPage.sass";
 import Logo from "../components/Logo";
 import ImageCard from "../components/Card/image-card";
