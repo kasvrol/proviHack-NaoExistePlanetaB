@@ -1,6 +1,6 @@
 import React from "react";
 import image04 from "../../images/image04.svg";
-import "../../style/text.sass";
+import "../../style/text.scss";
 
 export function WhoWeAre({ classNameTitle }) {
     return (

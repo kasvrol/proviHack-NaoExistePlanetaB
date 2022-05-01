@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/text.sass";
+import "../../style/text.scss";
 
 export function AboutMore() {
     return (
@@ -38,7 +38,7 @@ export function WhyThisCaseIsImpotant({ classNameTitle }) {
     return (
         <div className="AboutMoreContainer">
             <p className={classNameTitle}>Porque essa causa é importante?</p>
-            <section className="AboutMoreText">
+            <section className="WhyThisCaseIsImpotantText">
                 <p>
                     Não serão raras as críticas à indústria da moda acerca de
                     questões sociais e ambientais. Por exemplo, mais e mais
@@ -75,7 +75,7 @@ export function Benefits({ classNameTitle }) {
     return (
         <div className="AboutMoreContainer">
             <p className={classNameTitle}>Quais os benefícos para quem doa?</p>
-            <section className="AboutMoreText">
+            <section className="BenefitsText">
                 <p>
                     Empresas que realizam doações para fins sociais podem
                     receber benefícios fiscais do governo.
