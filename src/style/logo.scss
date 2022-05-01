@@ -1,0 +1,19 @@
+@import "./index.sass";
+
+@media screen and (max-width: 700px) {
+    .eConnectTextilLogo img {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .eConnectTextilLogo img {
+        width: 60vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .eConnectTextilLogo img {
+        width: 40vw;
+    }
+}

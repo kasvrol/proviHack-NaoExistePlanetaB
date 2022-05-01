@@ -5,11 +5,6 @@
     height: $image-length;
 }
 
-@mixin logo-size {
-    width: $logo-width;
-    height: auto;
-}
-
 @mixin photo-size {
     width: $photo-width;
     height: $photo-lenght;
