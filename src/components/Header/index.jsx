@@ -16,10 +16,6 @@ function Header() {
                     <Button title={"Login"} color={"header-button"} />
                 </li>
             </ul>
-            <div className="HeaderListMobile">
-                <img src={logo} alt="logo  do site eConnectTextil" />
-                <img src={image15} alt="botão menu" />
-            </div>
         </div>
     );
 }

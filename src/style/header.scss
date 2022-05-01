@@ -28,14 +28,12 @@
     @include directionOne(row);
 }
 
-@media screen and (min-width: 700px) {
-    .HeaderListMobile {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 700px) {
     .HeaderListDesktop {
-        display: none;
+        @include directionOne(column);
+    }
+    .HeaderListDesktop li {
+        font-size: 4vw;
+        margin-bottom: 1vw;
     }
 }

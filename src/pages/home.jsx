@@ -5,7 +5,7 @@ import Instructions from "../components/instructions";
 import Button from "../components/Button";
 import { WhyThisCaseIsImpotant, Benefits } from "../components/aboutMore";
 import TissuesCard from "../components/tissuesCard";
-import Header, { HeaderMobile } from "../components/Header";
+import Header from "../components/Header";
 
 import image05 from "../images/image05.svg";
 import image06 from "../images/image06.svg";
@@ -16,7 +16,6 @@ function Home() {
     return (
         <>
             <Header />
-            <HeaderMobile />
             <main className="homeContainer">
                 <Logo />
                 <section className="informationsContainer">
