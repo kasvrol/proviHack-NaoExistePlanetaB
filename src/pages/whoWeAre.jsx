@@ -15,11 +15,11 @@ function whoWeAre() {
             <Header />
             <main className="whoWeAreContainer">
                 <Logo />
-                <WhoWeAre />
+                <WhoWeAre classNameTitle="WhoWeAreTitle" />
                 <Informations />
                 <Instructions />
                 <TissuesCard />
-                <AboutMore />
+                <AboutMore classNameTitle="WhoWeAreTitle" />
                 <Button
                     title={"Quero ser um parceiro doador de tecidos!"}
                     color={"pink-button"}

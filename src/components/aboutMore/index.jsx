@@ -1,10 +1,10 @@
 import React from "react";
 import "../../style/text.scss";
 
-export function AboutMore() {
+export function AboutMore({ classNameTitle }) {
     return (
         <div className="AboutMoreContainer">
-            <p>Saiba mais</p>
+            <p className={classNameTitle}>Saiba mais</p>
             <section className="AboutMoreText">
                 <p>
                     Nosso projeto nasce com o intuito de conscientizar

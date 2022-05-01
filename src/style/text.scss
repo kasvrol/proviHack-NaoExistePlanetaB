@@ -42,6 +42,10 @@
     @include text($black, 2vw);
 }
 
+.AboutMoreText p {
+    padding: 1vw 3vw;
+}
+
 .whoAreText span {
     @include text($pink, 2vw);
 }
@@ -53,14 +57,16 @@
 @media screen and (max-width: 900px) {
     .whoWeAreTextContainer,
     .InformationsContainer,
-    .WhatWeDoContainer {
+    .WhatWeDoContainer,
+    .AboutMoreText {
         width: 70%;
     }
 
     .whoAreText p,
     .WhatWeDoText p,
     .WhyThisCaseIsImpotantText p,
-    .BenefitsText p {
+    .BenefitsText p,
+    .AboutMoreText p {
         @include text($black, 4vw);
     }
 
