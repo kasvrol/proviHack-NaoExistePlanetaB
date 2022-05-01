@@ -2,10 +2,10 @@ import React from "react";
 import image04 from "../../images/image04.svg";
 import "../../style/text.sass";
 
-export function WhoWeAre() {
+export function WhoWeAre({ classNameTitle }) {
     return (
         <div className="whoWeAreTextContainer">
-            <p>Quem somos</p>
+            <p className={classNameTitle}>Quem somos</p>
             <section className="whoAreText">
                 <p>
                     A <span>Econnectextil</span> nasceu com o intuito de
@@ -37,10 +37,10 @@ export function Informations() {
     );
 }
 
-export function WhatWeDo() {
+export function WhatWeDo({ classNameTitle }) {
     return (
         <div className="whoWeAreTextContainer">
-            <p>O que fazemos</p>
+            <p className={classNameTitle}>O que fazemos</p>
             <section className="whoAreText">
                 <p>
                     Transformamos os insumos descartados pela indústria têxtil

@@ -16,7 +16,7 @@ function Home() {
         <main className="homeContainer">
             <Logo />
             <section className="informationsContainer">
-                <WhoWeAre />
+                <WhoWeAre classNameTitle="WhoWeAreTitle" />
                 <img src={image06} alt="ilustração de um monitor" />
             </section>
             <section className="informationsContainer">
@@ -24,7 +24,7 @@ function Home() {
                     src={image05}
                     alt="ilustração de um fotográfo tirando fot de roupas"
                 />
-                <WhatWeDo />
+                <WhatWeDo classNameTitle="WhatWeDoTitle" />
             </section>
             <Instructions />
             <Button

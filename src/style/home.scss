@@ -13,6 +13,11 @@
     width: 40vw;
 }
 
+.WhoWeAreTitle,
+.WhatWeDoTitle {
+    @include title(3vw, $pink);
+}
+
 .pink-button {
     @include pink-button;
 }
