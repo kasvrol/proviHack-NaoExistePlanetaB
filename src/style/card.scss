@@ -11,11 +11,7 @@
     font-weight: bold;
 }
 
-.tissuesContainer > p {
-    @include title(4vw, $black);
-    font-weight: bold;
-}
-
+.tissuesContainer > p,
 .titleBlack {
     @include title(4vw, $black);
     font-weight: bold;
@@ -55,4 +51,26 @@
 .card-number {
     @include text($pink, 1rem);
     font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+    .intructions > p,
+    .tissuesContainer > p {
+        @include title(5vw, $pink);
+    }
+    .tissuesContainer > p {
+        @include title(5vw, $black);
+    }
+    .intructions-cards {
+        flex-direction: column;
+        width: 90%;
+    }
+    .card {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .tissue-lenght {
+        text-align: center;
+    }
 }
