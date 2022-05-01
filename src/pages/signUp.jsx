@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../components/Logo";
+import { NavLink } from "react-router-dom";
 
 import image07 from "../images/image07.svg";
 
@@ -85,10 +86,13 @@ function Home() {
                     placeholder="Confirme sua Senha"
                     className="informationsSection"
                 />
-
-                <button className="submitButton">Concluir!</button>
+                <NavLink to={"/"}>
+                    <button className="submitButton">Concluir!</button>
+                </NavLink>
             </form>
-            <button className="cancelButton">Cancelar</button>
+            <NavLink to={"/"}>
+                <button className="cancelButton">Cancelar</button>
+            </NavLink>
         </main>
     );
 }
