@@ -1,8 +1,8 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import { setItem, getItem } from '../utils/localStorage';
-import api from '../services/api';
+import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { setItem, getItem } from "../utils/localStorage";
+import api from "../services/api";
 import Logo from "../components/Logo";
 
 import image08 from "../images/image08.svg";
@@ -10,16 +10,16 @@ import image08 from "../images/image08.svg";
 import "../style/login.scss";
 
 function Home() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
     const navigate = useNavigate();
 
     useEffect(() => {
-        const token = getItem('token');
+        const token = getItem("token");
 
         if (token) {
-            navigate('/main');
+            navigate("/main");
         }
     }, []);
 
@@ -27,19 +27,22 @@ function Home() {
         e.preventDefault();
 
         try {
-            const response = await api.post('/login', {
+            const response = await api.post("/login", {
                 email,
-                password
+                password,
             });
 
             const { token, user } = response.data;
 
-            setItem('token', token);
-            setItem('userId', user.id);
+            setItem("token", token);
+            setItem("userId", user.id);
 
-            setError('');
-
-            navigate('/main');
+            setError("");
+            if (user.groupcategory === "costureira") {
+                navigate("/main");
+            } else {
+                navigate("/tissuesDonation");
+            }
         } catch (error) {
             setError(error.response.data.mensagem);
         }
@@ -76,7 +79,10 @@ function Home() {
                 <p className="registrationLoginParagraph">
                     Ainda não tem uma conta? Cadastre-se!
                 </p>
-                <button className="registrationLoginButton" onClick={() => navigate('/signUp')}>
+                <button
+                    className="registrationLoginButton"
+                    onClick={() => navigate("/signUp")}
+                >
                     Cadastrar-me
                 </button>
             </div>
