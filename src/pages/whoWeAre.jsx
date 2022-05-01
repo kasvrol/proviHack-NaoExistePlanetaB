@@ -6,6 +6,7 @@ import { AboutMore } from "../components/aboutMore";
 import Button from "../components/Button";
 import Logo from "../components/Logo";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "../style/custom.scss";
 
 function whoWeAre() {
@@ -24,6 +25,7 @@ function whoWeAre() {
                     color={"pink-button"}
                 />
             </main>
+            <Footer />
         </>
     );
 }

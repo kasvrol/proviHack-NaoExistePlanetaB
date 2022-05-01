@@ -1,7 +1,5 @@
 import React from "react";
 import Button from "../Button";
-import image15 from "../../images/image15.svg";
-import logo from "../../images/logo.svg";
 import "../../style/header.scss";
 import { NavLink } from "react-router-dom";
 
@@ -30,14 +28,3 @@ function Header() {
 }
 
 export default Header;
-
-export function HeaderMobile() {
-    return (
-        <div className="HeaderMobileContainer">
-            <div className="HeaderListMobile">
-                <img src={logo} alt="logo  do site eConnectTextil" />
-                <img src={image15} alt="botão menu" />
-            </div>
-        </div>
-    );
-}

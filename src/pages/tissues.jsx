@@ -5,6 +5,7 @@ import Logo from "../components/Logo";
 import ImageCard from "../components/Card/image-card";
 import Button from "../components/Button";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 import tissues01 from "../images/tissue01.svg";
 import tissues02 from "../images/tissue02.svg";
@@ -59,6 +60,7 @@ function outraC() {
                     color={"pink-button tissues-button"}
                 />
             </main>
+            <Footer />
         </>
     );
 }

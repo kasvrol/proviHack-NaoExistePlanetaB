@@ -6,6 +6,7 @@ import Button from "../components/Button";
 import { WhyThisCaseIsImpotant, Benefits } from "../components/aboutMore";
 import TissuesCard from "../components/tissuesCard";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 import image05 from "../images/image05.svg";
 import image06 from "../images/image06.svg";
@@ -38,6 +39,7 @@ function Home() {
                 <Benefits classNameTitle="WhoWeAreTitle" />
                 <TissuesCard />
             </main>
+            <Footer />
         </>
     );
 }

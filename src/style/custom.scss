@@ -18,6 +18,24 @@
     @include directionOne(column);
 }
 
+.footerContainer {
+    font-size: 2vw;
+    list-style: none;
+    background-color: $pink;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    margin-bottom: 0%;
+}
+
+.footerContainer li {
+    margin-bottom: 1vw;
+}
+
+.footerContainer li a {
+    text-decoration: none;
+    color: $white;
+}
+
 @media screen and (min-width: 700px) {
     .eConnectTextilLogo img {
         display: none;

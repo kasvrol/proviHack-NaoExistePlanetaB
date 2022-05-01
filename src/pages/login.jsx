@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../components/Logo";
 import { NavLink } from "react-router-dom";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 import image08 from "../images/image08.svg";
 
@@ -40,6 +41,7 @@ function Login() {
                     </NavLink>
                 </div>
             </main>
+            <Footer />
         </>
     );
 }

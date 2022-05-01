@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../components/Logo";
 import Button from "../components/Button";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 import image09 from "../images/image09.svg";
 
@@ -38,6 +39,7 @@ function tissuesDonation() {
                     />
                 </form>
             </main>
+            <Footer />
         </>
     );
 }

@@ -5,6 +5,7 @@ import Button from "../components/Button";
 import SeamstressesCard from "../components/seamstressesCard";
 import Instructions from "../components/instructions";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 import seamstresses01 from "../images/seamstresses1.svg";
 import seamstresses02 from "../images/seamstresses2.svg";
@@ -60,6 +61,7 @@ function Blog() {
                 />
                 <Instructions />
             </main>
+            <Footer />
         </>
     );
 }

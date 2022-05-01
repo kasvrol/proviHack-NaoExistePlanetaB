@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../components/Logo";
 import Button from "../components/Button";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 import image14 from "../images/image14.svg";
 import image13 from "../images/image13.svg";
@@ -88,6 +89,7 @@ function Marketplace() {
                     </div>
                 </div>
             </main>
+            <Footer />
         </>
     );
 }
