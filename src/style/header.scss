@@ -1,0 +1,41 @@
+@import "./index.sass";
+
+.HeaderContainer {
+    margin-bottom: 10vw;
+}
+
+.HeaderListDesktop {
+    @include directionOne(row);
+    list-style: none;
+}
+
+.HeaderListDesktop li {
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+
+.header-button {
+    padding: 0.5vw 2vw;
+    border: none;
+    background-color: $pink;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    border-radius: 0.6vw;
+    cursor: pointer;
+}
+
+.HeaderListMobile {
+    @include directionOne(row);
+}
+
+@media screen and (min-width: 700px) {
+    .HeaderListMobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .HeaderListDesktop {
+        display: none;
+    }
+}
