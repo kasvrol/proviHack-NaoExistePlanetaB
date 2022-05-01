@@ -1,0 +1,134 @@
+@import "./index.sass";
+
+.marketplaceContainer {
+    @include directionOne(column);
+}
+
+.marketplaceMerchan {
+    background-image: url("/images/image10.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30vw;
+    @include directionOne(column);
+    margin-bottom: 10vw;
+}
+
+.marketplaceMerchan p {
+    font-size: 5vw;
+    width: 50vw;
+    color: $white;
+}
+
+.marketplaceMensage {
+    font-size: 4vw;
+}
+
+.marketplaceText {
+    padding: 5vw 5vw 5vw 5vw;
+}
+
+.merchanCards {
+    @include directionOne(row);
+}
+
+.BusinessCard {
+    @include directionOne(column);
+    width: 30vw;
+    background-color: $input-color;
+    border-radius: 1vw;
+    height: 60vw;
+    padding: 0 2vw;
+    margin-bottom: 15vw;
+}
+
+.BusinessCardSpan {
+    font-weight: 1000;
+}
+
+.BusinessCard img {
+    width: 20vw;
+}
+
+.marketplace-button {
+    padding: 1vw 01vw;
+    font-size: 2vw;
+}
+
+@media screen and (min-width: 1100px) {
+    .marketplaceMerchan {
+        height: 15vw;
+        margin-bottom: 7vw;
+    }
+
+    .marketplaceMerchan p {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .marketplaceMensage {
+        font-size: 2.4vw;
+    }
+
+    .marketplaceText {
+        padding: 1vw 5vw 5vw 5vw;
+        font-size: 1.5vw;
+    }
+
+    .BusinessCard {
+        width: 15vw;
+        border-radius: 1vw;
+        height: 50vw;
+        padding: 0 2vw;
+        margin-bottom: 8vw;
+    }
+
+    .BusinessCard img {
+        width: 15vw;
+    }
+
+    .marketplace-button {
+        padding: 0.5vw 0.5vw;
+        font-size: 1.5vw;
+        width: 15vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .marketplaceMerchan {
+        height: 20vw;
+        margin-bottom: 15vw;
+    }
+
+    .marketplaceMerchan p {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .marketplaceMensage {
+        font-size: 4vw;
+    }
+
+    .marketplaceText {
+        padding: 1vw 3vw 5vw 3vw;
+        font-size: 3vw;
+    }
+
+    .BusinessCard {
+        width: 30vw;
+        border-radius: 1vw;
+        height: 90vw;
+    }
+
+    .BusinessCard img {
+        width: 25vw;
+    }
+
+    .marketplace-button {
+        padding: 0.5vw 0.5vw;
+        font-size: 2vw;
+        width: 25vw;
+        height: 5vw;
+        border-radius: 0.5vw;
+    }
+}

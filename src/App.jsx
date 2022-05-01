@@ -7,7 +7,7 @@ import Blog from "./pages/blog";
 import SignUp from "./pages/signUp";
 import Login from "./pages/login";
 import TissuesDonation from "./pages/tissueDonation";
-import Marketplace from "./pages/tissueDonation";
+import Marketplace from "./pages/marketplace";
 
 function App() {
     return (
