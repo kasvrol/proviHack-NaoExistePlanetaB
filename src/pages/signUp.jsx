@@ -182,7 +182,7 @@ function Home() {
 
                 <button className="submitButton" type="submit">Concluir!</button>
             </form>
-            <button className="cancelButton">Cancelar</button>
+            <button className="cancelButton" onClick={() => navigate('/')}>Cancelar</button>
         </main>
     );
 }
