@@ -5,11 +5,13 @@ import { WhoWeAre, Informations } from "../components/whoWeAreText";
 import { AboutMore } from "../components/aboutMore";
 import Button from "../components/Button";
 import Logo from "../components/Logo";
+import Header from "../components/Header";
 import "../style/custom.scss";
 
 function whoWeAre() {
     return (
         <>
+            <Header />
             <main className="whoWeAreContainer">
                 <Logo />
                 <WhoWeAre />
