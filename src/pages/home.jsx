@@ -13,7 +13,7 @@ import "../style/home.scss";
 
 function Home() {
     return (
-        <main>
+        <main className="homeContainer">
             <Logo />
             <section className="informationsContainer">
                 <WhoWeAre />

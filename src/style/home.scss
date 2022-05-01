@@ -1,5 +1,10 @@
 @import "./index";
 
+.homeContainer {
+    @include directionOne(column);
+    padding: 0 2vw;
+}
+
 .informationsContainer {
     @include directionOne(row);
 }
