@@ -5,7 +5,8 @@
     @include directionOne(column);
 }
 
-.whoWeAreContainer .logo-image {
+.eConnectTextilLogo {
+    display: flex;
     @include logo-size;
 }
 
@@ -17,8 +18,8 @@
     @include directionOne(column);
 }
 
-@media screen and (max-width: 700px) {
-    .HeaderListDesktop {
+@media screen and (min-width: 700px) {
+    .eConnectTextilLogo img {
         display: none;
     }
 }

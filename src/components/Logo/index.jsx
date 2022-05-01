@@ -4,11 +4,13 @@ import "../../style/custom.scss";
 
 function Logo() {
     return (
-        <img
-            src={logo}
-            alt="logo do projeto eConnectTextil"
-            className="logo-image"
-        />
+        <div className="eConnectTextilLogo">
+            <img
+                src={logo}
+                alt="logo do projeto eConnectTextil"
+                className="logo-image"
+            />
+        </div>
     );
 }
 
