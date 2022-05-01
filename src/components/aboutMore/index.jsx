@@ -1,7 +1,7 @@
 import React from "react";
 import "../../style/text.sass";
 
-function AboutMore() {
+export function AboutMore() {
     return (
         <div className="AboutMoreContainer">
             <p>Saiba mais</p>
@@ -34,12 +34,10 @@ function AboutMore() {
     );
 }
 
-export default AboutMore;
-
-export function WhyThisCaseIsImpotant() {
+export function WhyThisCaseIsImpotant({ classNameTitle }) {
     return (
         <div className="AboutMoreContainer">
-            <p>Porque essa causa é importante?</p>
+            <p className={classNameTitle}>Porque essa causa é importante?</p>
             <section className="AboutMoreText">
                 <p>
                     Não serão raras as críticas à indústria da moda acerca de
@@ -73,10 +71,10 @@ export function WhyThisCaseIsImpotant() {
     );
 }
 
-export function Benefits() {
+export function Benefits({ classNameTitle }) {
     return (
         <div className="AboutMoreContainer">
-            <p>Quais os benefícos para quem doa?</p>
+            <p className={classNameTitle}>Quais os benefícos para quem doa?</p>
             <section className="AboutMoreText">
                 <p>
                     Empresas que realizam doações para fins sociais podem

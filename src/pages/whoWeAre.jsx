@@ -2,7 +2,7 @@ import React from "react";
 import Instructions from "../components/instructions";
 import TissuesCard from "../components/tissuesCard";
 import { WhoWeAre, Informations } from "../components/whoWeAreText";
-import AboutMore from "../components/aboutMore";
+import { AboutMore } from "../components/aboutMore";
 import Button from "../components/Button";
 import Logo from "../components/Logo";
 import "../style/custom.sass";
