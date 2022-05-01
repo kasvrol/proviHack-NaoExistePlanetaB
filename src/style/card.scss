@@ -1,0 +1,58 @@
+@import "./index";
+
+.intructions,
+.tissuesContainer,
+.cardContainer {
+    @include directionOne(column);
+}
+
+.intructions > p {
+    @include title(4vw, $pink);
+    font-weight: bold;
+}
+
+.tissuesContainer > p {
+    @include title(4vw, $black);
+    font-weight: bold;
+}
+
+.titleBlack {
+    @include title(4vw, $black);
+    font-weight: bold;
+}
+
+.intructions-cards,
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0.5rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.image-card {
+    @include photo-size;
+    padding-bottom: 0.5vw;
+}
+
+.card-paragraph {
+    @include text($black, 1rem);
+    font-weight: 600;
+}
+
+.tissue-lenght {
+    background-color: $input-color;
+}
+
+.card-number {
+    @include text($pink, 1rem);
+    font-weight: 600;
+}
