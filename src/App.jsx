@@ -6,6 +6,7 @@ import Tissues from "./pages/tissues";
 import Blog from "./pages/blog";
 import SignUp from "./pages/signUp";
 import Login from "./pages/login";
+import TissuesDonation from "./pages/login";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/signUp" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/tissuesDonation" element={<TissuesDonation />} />
         </Routes>
     );
 }
