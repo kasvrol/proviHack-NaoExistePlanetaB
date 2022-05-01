@@ -1,0 +1,164 @@
+@import "./index.sass";
+
+.signUpContainer,
+.signUpForm,
+.registrationTypeContainer {
+    @include directionOne(column);
+}
+
+.registrationTypeContainer {
+    width: 91%;
+    border: 1px solid gray;
+    border-radius: 0.5vw;
+    margin-bottom: 0.7vw;
+    background-color: $pink;
+}
+
+.registrationTypeContainer :nth-child(2) {
+    border-bottom: 1px solid gray;
+}
+
+.registrationType {
+    @include directionOne(row);
+    justify-content: space-between;
+    background-color: $input-color;
+    width: 98.9%;
+    padding: 0.3vw;
+}
+
+.registrationImage {
+    width: 50%;
+}
+
+.registrationParagraph {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.informationsSection {
+    border-radius: 0.5vw;
+    font-size: 2vw;
+    font-family: "Roboto Slab", serif;
+    background-color: $input-color;
+    border: 1px solid;
+    width: 90%;
+    margin-bottom: 0.7vw;
+}
+
+.informationsAdressSection {
+    @include directionOne(row);
+    justify-content: space-between;
+    width: 91%;
+    margin-bottom: 0.7vw;
+}
+
+.informationsAdressSectionInput {
+    border-radius: 0.5vw;
+    font-size: 2vw;
+    font-family: "Roboto Slab", serif;
+    background-color: $input-color;
+    border: 1px solid;
+    width: 40%;
+}
+
+.cancelButton,
+.submitButton {
+    width: 13vw;
+    height: 4vw;
+    font-size: 1.8vw;
+    border: none;
+    font-family: "Roboto Slab", serif;
+}
+
+.submitButton {
+    margin-top: 2vw;
+    background-color: $pink;
+    border-radius: 0.8vw;
+    color: $white;
+}
+
+.cancelButton {
+    background-color: transparent;
+}
+
+@media screen and (min-width: 1100px) {
+    .registrationImage {
+        width: 20%;
+    }
+    .registrationParagraph {
+        font-size: 2vw;
+    }
+    .registrationTypeContainer {
+        width: 100%;
+        border-radius: 0.2vw;
+    }
+    .registrationType {
+        width: 98%;
+    }
+    .registrationTypeContainer :nth-child(3) {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    .informationsAdressSection {
+        width: 100%;
+    }
+    .informationsSection {
+        width: 100%;
+        border-radius: 0.2vw;
+    }
+    .informationsSection,
+    .informationsAdressSectionInput {
+        font-size: 1vw;
+    }
+    .cancelButton,
+    .submitButton {
+        width: 7vw;
+        height: 3vw;
+        font-size: 1vw;
+    }
+    .informationsAdressSectionInput {
+        border-radius: 0.2vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .registrationImage {
+        width: 50%;
+    }
+    .registrationParagraph {
+        font-size: 3vw;
+    }
+    .registrationTypeContainer {
+        width: 100%;
+        border-radius: 1vw;
+        font-size: 3vw;
+    }
+    .registrationType {
+        width: 99.6%;
+    }
+    .registrationTypeContainer :nth-child(3) {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    .informationsAdressSection {
+        width: 100%;
+    }
+    .informationsSection {
+        width: 100%;
+        border-radius: 1vw;
+    }
+    .informationsSection,
+    .informationsAdressSectionInput {
+        font-size: 3vw;
+    }
+    .cancelButton,
+    .submitButton {
+        width: 18vw;
+        height: 6vw;
+        font-size: 3vw;
+        text-align: center;
+    }
+    .informationsAdressSectionInput {
+        border-radius: 1vw;
+    }
+}
