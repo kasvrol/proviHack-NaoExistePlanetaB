@@ -1,5 +1,4 @@
 import React from "react";
-import Instructions from "../components/instructions";
 import TissuesCard from "../components/tissuesCard";
 import { WhoWeAre, Informations } from "../components/whoWeAreText";
 import { AboutMore } from "../components/aboutMore";
