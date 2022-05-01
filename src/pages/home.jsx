@@ -31,8 +31,8 @@ function Home() {
                 title={"Cadastre-se para receber doações"}
                 color={"pink-button"}
             />
-            <WhyThisCaseIsImpotant classNameTitle="WhyThisCaseIsImpotantTitle" />
-            <Benefits classNameTitle="BenefitsTitle" />
+            <WhyThisCaseIsImpotant classNameTitle="WhoWeAreTitle" />
+            <Benefits classNameTitle="WhoWeAreTitle" />
             <TissuesCard />
         </main>
     );

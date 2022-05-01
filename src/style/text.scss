@@ -2,11 +2,20 @@
 
 // start component who we are
 
-.whoWeAreTextContainer {
-    width: 90%;
+.whoWeAreTextContainer,
+.InformationsContainer,
+.WhatWeDoContainer {
+    @include directionOne(column);
 }
 
-.whoWeAreTextContainer > p {
+.whoAreText > p,
+.WhatWeDoText > p {
+    width: 100%;
+    text-align: justify;
+}
+
+.whoWeAreTextContainer > p,
+.WhatWeDoContainer > p {
     text-align: center;
 }
 
@@ -18,22 +27,23 @@
 
 .AboutMoreContainer {
     @include directionOne(column);
+    text-align: center;
 }
 
-.whoAreContainer > p,
-.AboutMoreContainer > p {
+.whoAreContainer > p {
     @include title(4vw, $pink);
 }
 
-.whoAreText,
-.AboutMoreText,
-.WhyThisCaseIsImpotantText,
-.BenefitsTexts {
-    @include text($black, 1rem);
+.whoAreText p,
+.AboutMoreText p,
+.WhatWeDoText p,
+.WhyThisCaseIsImpotantText p,
+.BenefitsText p {
+    @include text($black, 2vw);
 }
 
 .whoAreText span {
-    @include text($pink, 1rem);
+    @include text($pink, 2vw);
 }
 
 .whoAreImage img {
@@ -41,9 +51,40 @@
 }
 
 @media screen and (max-width: 900px) {
+    .whoWeAreTextContainer,
+    .InformationsContainer,
+    .WhatWeDoContainer {
+        width: 70%;
+    }
+
+    .whoAreText p,
+    .WhatWeDoText p,
+    .WhyThisCaseIsImpotantText p,
+    .BenefitsText p {
+        @include text($black, 4vw);
+    }
+
+    .whoAreText span {
+        @include text($pink, 4vw);
+    }
+
     .WhyThisCaseIsImpotantText,
     .BenefitsText {
         @include text($black, 4vw);
         width: 70%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .whoAreText p,
+    .AboutMoreText p,
+    .WhatWeDoText p,
+    .WhyThisCaseIsImpotantText p,
+    .BenefitsText p {
+        @include text($black, 1.5vw);
+    }
+
+    .whoAreText span {
+        @include text($pink, 1.5vw);
     }
 }

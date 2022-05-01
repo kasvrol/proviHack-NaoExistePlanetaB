@@ -14,16 +14,10 @@
 }
 
 .WhoWeAreTitle,
-.WhatWeDoTitle {
-    @include title(3vw, $pink);
-}
-
-.BenefitsTitle {
-    @include title(1px, $pink);
-}
-
+.WhatWeDoTitle,
+.BenefitsTitle,
 .WhyThisCaseIsImpotantTitle {
-    @include title(1px, $pink);
+    @include title(3vw, $pink);
 }
 
 .pink-button {
@@ -31,6 +25,10 @@
 }
 
 @media screen and (max-width: 900px) {
+    .WhoWeAreTitle,
+    .WhatWeDoTitle {
+        @include title(6vw, $pink);
+    }
     .informationsContainer {
         @include directionOne(column);
     }

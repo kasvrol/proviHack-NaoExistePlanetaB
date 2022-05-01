@@ -19,7 +19,7 @@ export function WhoWeAre({ classNameTitle }) {
 
 export function Informations() {
     return (
-        <div className="whoWeAreTextContainer">
+        <div className="InformationsContainer">
             <section className="whoAreText">
                 <p>
                     Juntos, os bairros do Brás, Bom Retiro e Vila Mariana
@@ -39,9 +39,9 @@ export function Informations() {
 
 export function WhatWeDo({ classNameTitle }) {
     return (
-        <div className="whoWeAreTextContainer">
+        <div className="WhatWeDoContainer">
             <p className={classNameTitle}>O que fazemos</p>
-            <section className="whoAreText">
+            <section className="WhatWeDoText">
                 <p>
                     Transformamos os insumos descartados pela indústria têxtil
                     em matéria prima para muheres em situação de funerabilidade
