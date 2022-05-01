@@ -6,7 +6,7 @@ import image08 from "../images/image08.svg";
 
 import "../style/login.scss";
 
-function Home() {
+function Login() {
     return (
         <main className="LoginContainer">
             <Logo />
@@ -40,4 +40,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Login;
