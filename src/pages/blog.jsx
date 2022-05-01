@@ -3,9 +3,9 @@ import "../style/blog.scss";
 import Logo from "../components/Logo";
 import Button from "../components/Button";
 import SeamstressesCard from "../components/seamstressesCard";
-import Instructions from "../components/instructions";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ImageCard from "../components/Card/image-card";
 
 import seamstresses01 from "../images/seamstresses1.svg";
 import seamstresses02 from "../images/seamstresses2.svg";
@@ -15,6 +15,9 @@ import seamstresses05 from "../images/seamstresses5.svg";
 import seamstresses06 from "../images/seamstresses6.svg";
 import seamstresses07 from "../images/seamstresses7.svg";
 import seamstresses08 from "../images/seamstresses8.svg";
+import instruction01 from "../images/image01.svg";
+import instruction02 from "../images/image02.svg";
+import instruction03 from "../images/image03.svg";
 
 function Blog() {
     return (
@@ -59,7 +62,32 @@ function Blog() {
                     title={"Seja uma costureira parceira, cadastre-se"}
                     color={"pink-button tissues-button"}
                 />
-                <Instructions />
+                <ImageCard
+                    title={"Como nosso projeto funciona?"}
+                    classTitle={"titlePink"}
+                    imageOne={instruction01}
+                    imageTwo={instruction02}
+                    imageThree={instruction03}
+                    textImageOne={
+                        "1 -Empresas doam residúdos de tecidos (recortes)."
+                    }
+                    textImageTwo={
+                        "2 -Costureiras se cadastram para receber doações."
+                    }
+                    textImageThree={
+                        "3 -Costureiras retiram no polo mais próximo de suas casas."
+                    }
+                    textOne={
+                        "1 -Empresas doam residúdos de tecidos (recortes)."
+                    }
+                    textTwo={
+                        "2 -Costureiras se cadastram para receber doações."
+                    }
+                    textThree={
+                        "3 -Costureiras retiram no polo mais próximo de suas casas."
+                    }
+                    cardParagraph={"card-paragraph"}
+                />
             </main>
             <Footer />
         </>
