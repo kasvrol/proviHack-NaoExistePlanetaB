@@ -2,9 +2,9 @@
 
 <p text-align=justify>Esse repositório foi criado para comportar a parte do front do projeto voltado ao primeiro hackathon da Provi do ano de 2022 com o tema "Não existe planeta B"</p>
 
-### Fotos do projeto rodado localmente:
+### Vídeo do projeto rodado localmente:
 
-### Fotos do prototipo:
+https://youtu.be/aiy8h7E7zJI
 
 ### Ferramentas e Tecnologias:
 
@@ -13,6 +13,7 @@
 - [Javascript](https://www.javascript.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Git](https://git-scm.com/)
+- [Sass](https://sass-lang.com/)
 
 ### Para baixar o código em sua máquina:
 
@@ -43,7 +44,8 @@ npm start
 
 ### Autoras:
 
-| Nome         | Cargo | Github        | Email                      |
-| ------------ | ----- | ------------- | -------------------------- |
-| Ana Karolina | DEV   | kasvrol       | santosak1999@gemail.com    |
-| Tainara C    | DEV   | TaiCostaAlves | tainaracosta92@hotmail.com |
+| Nome             | Cargo | Github           | Email                   |
+| ---------------- | ----- | ---------------- | ----------------------- |
+| Ana Karolina     | DEV   | kasvrol          | santosak1999@gemail.com |
+| Victor Vinicius  | DEV   | victorvinicius33 |                         |
+| Beatriz Zucchini | UI/UX |                  |                         |
